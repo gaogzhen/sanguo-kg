@@ -1,0 +1,19 @@
+# Web Framework
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+pydantic==2.7.0
+pydantic-settings==2.2.1
+
+# Database Driver
+neo4j==5.20.0
+
+# HTTP Client (for calling Ollama)
+httpx==0.27.0
+
+# Environment & Utils
+python-dotenv==1.0.1
+tqdm==4.66.4  # 用于显示提取进度条
+
+# Optional: For future RAG features
+# langchain==0.2.0
+# langchain-community==0.2.0
