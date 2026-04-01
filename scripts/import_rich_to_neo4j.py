@@ -1,5 +1,7 @@
 import os
 import json
+from pathlib import Path
+
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
 from tqdm import tqdm
@@ -11,7 +13,10 @@ USER = os.getenv("NEO4J_USER", "neo4j")
 PASSWORD = os.getenv("NEO4J_PASSWORD", "StrongPassword123!")
 DATABASE = os.getenv("NEO4J_DATABASE", "neo4j")
 
-INPUT_FILE = os.path.join("data", "cleaned_rich_kg.json")
+# --- 路径配置 ---
+BASE_DIR = Path(__file__).resolve().parent.parent
+DATA_DIR = BASE_DIR / "data"
+INPUT_FILE = os.path.join(DATA_DIR, "rich_extracted_clean.json")
 
 # 映射 Python 类型到 Neo4j Label
 TYPE_MAP = {

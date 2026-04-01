@@ -34,3 +34,4 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 # 启动数据库
 docker compose -f docker-compose.dev.yml up -d
+

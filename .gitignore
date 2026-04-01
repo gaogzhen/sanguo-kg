@@ -47,9 +47,7 @@ page-lock.json
 *.swo
 
 # Data (Optional: Keep raw txt, ignore generated DB files if too large)
- data/neo4j_data/
- data/neo4j_logs/
- data/extracted_relations.json
- data/cleaned_kg.json
+data/neo4j_data/
+data/neo4j_logs/
 
 
